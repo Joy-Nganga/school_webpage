@@ -46,10 +46,18 @@
         color: gray;
         font-family: 'Courier New', Courier, monospace;
     }
+    .footer{
+         
+        background-image: linear-gradient(rgb(231, 77, 231), rgb(255, 202, 244),blue);
+    }
     .footer li {
         margin: 20px;
         list-style-type: none;
         float: left;
+    }
+    label{
+        display: block;
+        
     }
 </style>
 <body>
@@ -94,9 +102,12 @@
         <h4>Register Here</h4>
         <form action="">
             <label for="name">Name</label>
-            <input type="text" placeholder="What is your name?">
-            <label for="">Grade</label>
-            <input type="number" placeholder="Which is your grade?">
+            <input name="name" type="text" placeholder="What is your name?">
+            <label for="grade">Grade</label>
+            <input name="grade" type="number" placeholder="What is your grade?"> <br>
+            <label for="email">email</label>
+            <input type="text" name="email" id="" placeholder="enter you email">
+
             <button>Submit</button>
         </form>
     </div>
@@ -110,4 +121,4 @@
         
     </footer>
 </body>
-</html>
+</html>\\\
