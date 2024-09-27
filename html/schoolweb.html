@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,31 +10,34 @@
     body {
         margin: 20px;
     }
+
     header {
         display: block;
         margin: 0px;
     }
+
     .logo {
         width: 50px;
         height: 50px;
     }
-    nav {
-        /*margin: 20px;*/
-    }
+
     nav ul {
         list-style-type: none;
     }
+
     nav li {
         float: left;
         font-size: 30px;
         color: gray;
         margin-left: 20px;
     }
+
     .banner {
         float: right;
         margin-top: -300px;
 
     }
+
     .name {
         font-size: 50px;
         text-align: center;
@@ -41,41 +45,60 @@
         margin-top: 100px;
         color: red;
     }
-    .my-school{
+
+    .my-school {
         font-size: 22px;
         color: gray;
         font-family: 'Courier New', Courier, monospace;
     }
-    .footer{
-         
-        background-image: linear-gradient(rgb(231, 77, 231), rgb(255, 202, 244),blue);
+
+    .footer {
+
+        background-image: linear-gradient(rgb(231, 77, 231), rgb(255, 202, 244), blue);
     }
+
     .footer li {
         margin: 20px;
         list-style-type: none;
         float: left;
     }
-    label{
-        display: block;
-        
-    }
-    h2{
+
+    h2 {
         color: rgb(255, 192, 239);
 
     }
-    .workers{
+
+    .workers {
         color: plum;
         font-size: 16px;
         font-style: italic;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
-    h4{
+
+    h4 {
         font-style: italic;
         color: aqua;
         font-size: 20px;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
+
+    form input[type='checkbox'] {
+        box-shadow: 0 0 0 3px hotpink;
+        display: inline;
+    }
+    label {
+        display: block;
+    }
+    form input{
+        display: block;
+        margin: 6px 0px;
+    }
+    form input::placeholder{
+        color: gray;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
 </style>
+
 <body>
     <header>
         <nav>
@@ -94,15 +117,15 @@
         <p class="my-school">my school is a big school called st gabriel <br>
             my school is lacated in Motomo/kenya <br>
             we have workers in our school <br>
-            <h2 class="h2">workers</h2>
-            <ul class="workers">
-                <li class="li">cooks</li>
-                <li class="lie">drivers</li>
-                <li class="ki">teachers</li>
-                <li class="mi">secretary</li>
-                <li class="ni">accountant</li>
-                <li class="pi">printer</li>
-            </ul>
+        <h2 class="h2">workers</h2>
+        <ul class="workers">
+            <li class="li">cooks</li>
+            <li class="lie">drivers</li>
+            <li class="ki">teachers</li>
+            <li class="mi">secretary</li>
+            <li class="ni">accountant</li>
+            <li class="pi">printer</li>
+        </ul>
         </p>
     </section>
     <section>
@@ -111,11 +134,11 @@
     <div>
         <video width="320" height="240" controls>
             <source src="../videos/stgabvid.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video>
+            Your browser does not support the video tag.
+        </video>
     </div>
     <div>
-        <h4 class="h4" >Register Here</h4>
+        <h4 class="h4">Register Here</h4>
         <form action="">
             <label for="name">Name</label>
             <input name="name" type="text" placeholder="What is your name?">
@@ -125,6 +148,10 @@
             <input type="text" name="email" id="" placeholder="enter you email">
             <label for="phone">phone number</label>
             <input type="number" name="phone" placeholder="enter Your phone number">
+            <input type="checkbox" id="male" name="male" value="Male">
+            <label for="male" style="display: inline;">Male</label><br>
+            <input type="checkbox" id="female" name="female" value="female">
+            <label for="female" style="display: inline;">female</label><br>
 
             <button>Submit</button>
         </form>
@@ -136,7 +163,8 @@
             <li>school rules</li>
         </ul>
         <img src="audio" alt="">
-        
+
     </footer>
 </body>
+
 </html>
