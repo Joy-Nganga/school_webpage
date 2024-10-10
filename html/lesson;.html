@@ -1,17 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        label {
+            color: hotpink;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-style: italic;
+            font-weight: 10;
+            display: block;
+            margin: 10px 0px;
+        }
+
+        input {
+            border-color: lightblue;
+            display: block;
+            border-radius: 5px;
+        }
+
+        input::placeholder {
+            color: lightgreen;
+            opacity: 0.5;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-style: italic;
+        }
+
+        input[type="checkbox"] {
+            box-shadow: 0 0 5px 3px blue;
+            display: inline;
+            margin: 10px;
+        }
+
+        button {
+            background-color: aquamarine;
+            padding: 10px;
+            margin: 20px;
+            border-radius: 10px;
+        }
+    </style>
 </head>
+
 <body>
-    
+
     <form action="">
         <label for="name">Name</label>
         <input name="name" type="text" placeholder="What is your name?">
         <label for="grade">Grade</label>
-        <input name="grade" type="number" placeholder="What is your grade?"> <br>
+        <input name="grade" type="number" placeholder="What is your grade?">
         <label for="email">email</label>
         <input type="text" name="email" id="" placeholder="enter you email">
         <label for="phone">phone number</label>
@@ -24,4 +62,5 @@
         <button>Submit</button>
     </form>
 </body>
+
 </html>
